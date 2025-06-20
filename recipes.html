@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title> World on a Plate - Recipes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        .recipe-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .recipe-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .recipe-card h3 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .recipe-card img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .recipe-meta {
+            font-size: 14px;
+            color: #777;
+            margin-bottom: 8px;
+        }
+
+        .recipe-card p {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .recipe-card ul {
+            padding-left: 20px;
+            margin-bottom: 10px;
+        }
+
+        .recipe-card ul li {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 5px;
+        }
+
+        .print-btn {
+            background-color: #008cba;
+            color: #fff;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .print-btn:hover {
+            background-color: #0076a3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        OUR RECIPES, YOUR INBOX.
+    </div>
+
+    <header class="header">
+        <h1> world <em> on a </em> plate </h1>
+        <nav class="nav">
+            <a href="index.html">HOME</a>
+            <a href="gallery.html">GALLERY</a>
+            <a href="recipes.html">RECIPES</a>
+            <a href="contact.html">CONTACT</a>
+            <a href="about.html">ABOUT</a>
+            <a href="start.html">START HERE</a>
+        </nav>
+    </header>
+
+    <section class="content-section">
+        <h2>Our Favorite Recipes</h2>
+        <p>Explore delicious recipes below — each with simple ingredients and easy-to-follow instructions. Perfect for everyday home cooking!</p>
+
+        <!-- Recipe 1 -->
+        <div class="recipe-card">
+            <img src="porkadobo.jpg" alt="Pork Adobo">
+            <h3> Pork Adobo </h3>
+            <div class="recipe-meta">
+                ⭐⭐⭐⭐⭐ (5 stars) | Servings: 6-8 | Prep: 10-15 min | Cook: 1-2 hours
+            </div>
+            <p>A Filipino dish of pork simmered in soy sauce and vinegar.</p>
+            <strong>Ingredients:</strong>
+            <ul>
+                <li> Pork Belly </li>
+                <li> Garlic </li>
+                <li> Dried bay leaves </li>
+                <li> Vinegar </li>
+                <li> Soy Sauce </li>
+                <li> Peppercorn </li>
+                <li> Water </li>
+                <li> Salt </li>
+            </ul>
+            <strong>How to cook:</strong>
+            <ul>
+                <li>Combine the pork belly, soy sauce, and garlic then marinade for at least 1 hour.</li>
+                <li>Heat the pot and put-in the marinated pork belly. Cook this all up for a few minutes.</li>
+                <li>Pour the remaining marinade including the garlic.</li>
+                <li>Add water, whole peppercorn, and dried bay leaves. Then bring your mixture to a boil. Simmer for 40 minutes to 1 hour.</li>
+                <li>Put the vinegar inside and simmer for 12 to 15 minutes.</li>
+                <li>Add salt to taste.</li>
+                <li>Serve hot. Share and enjoy!</li>
+            </ul>
+            <a href="#" class="print-btn" onclick="window.print(); return false;">Print this recipe</a>
+        </div>
+        
+        <!-- Recipe 2 -->
+        <div class="recipe-card">
+            <img src="sinigang.jpg" alt="Sinigang">
+            <h3> Sinigang </h3>
+            <div class="recipe-meta">
+                ⭐⭐⭐⭐⭐ (5 stars) | Servings: 5-6 | Prep: 10-15 min | Cook: 60-90 min
+            </div>
+            <p>A sour Filipino soup with meat and vegetables.</p>
+            <strong>Ingredients:</strong>
+            <ul>
+                <li> Pork Belly </li>
+                <li> Young tamarind paste </li>
+                <li> Bok Choy </li>
+                <li> String Beans </li>
+                <li> Long green pepper </li>
+                <li> Daikon radish </li>
+                <li> Eggplant </li>
+                <li> Okra </li>
+                <li> Tomato </li>
+                <li> Fish sauce </li>
+                <li> Pepper to taste </li>
+                <li> Onion </li>
+            </ul>
+            <strong>How to cook:</strong>
+            <ul>
+                <li>Pat dry pork, then season with salt & black pepper. Heat a large pot on medium-high with a little oil, then sear for about 3-5 minutes, working in batches if needed. They should be golden brown but not cooked through (it’ll finish cooking in the broth).</li>
+                <li>Remove pork meat & set aside. Toss in diced onions & tomatoes, then saute for about 1 minute, or until they’ve softened.</li>
+                <li>Pour in water and add pork back in. Cover & bring to a rolling bowl, then reduce to medium-low. Simmer for about 1 1/2 – 2 hours, or until pork is fork tender & cooked through.</li>
+                <li>Add taro and string beans then cover and cook for about 5 minutes, or until they start to become tender but not soggy.</li>
+                <li>Add in tamarind paste, fish sauce, & bok choy. Gently stir & cook until bok choy has wilted.</li>
+                <li>Taste test the sinigang broth – if you’d like it to be sourer, add more sinigang seasoning. If it needs more salt, add more fish sauce.</li>
+                <li>Turn off heat, pour into a serving bowl, & serve with steamy hot rice. Enjoy!</li>
+            </ul>
+            <a href="#" class="print-btn" onclick="window.print(); return false;">Print this recipe</a>
+        </div>
+
+        <!-- Recipe 3 -->
+        <div class="recipe-card">
+            <img src="karekare.jpg" alt="Kare-kare">
+            <h3> Kare-kare </h3>
+            <div class="recipe-meta">
+                ⭐⭐⭐⭐☆ (4 stars) | Servings: 2 | Prep: 15 min | Cook: 10 min
+            </div>
+            <p>A Filipino peanut stew with meat and vegetables.</p>
+            <strong>Ingredients:</strong>
+            <ul>
+                <li>3 lbs oxtail cut in 2 inch slices you an also use tripe or beef slices</li>
+                <li>1 piece small banana flower bud sliced</li>
+                <li>1 bundle pechay or bok choy</li>
+                <li>1 bundle string beans cut into 2 inch slices</li>
+                <li>4 pieces eggplants sliced</li>
+                <li>1 cup ground peanuts</li>
+                <li>1/2 cup peanut butter</li>
+                <li>1/2 cup shrimp paste</li>
+                <li>34 Ounces water about 1 Liter</li>
+                <li>1/2 cup annatto seeds soaked in a cup of water</li>
+                <li>1/2 cup toasted ground rice</li>
+                <li>1 tbsp garlic minced</li>
+                <li>1 piece onion chopped</li>
+                <li>Salt and pepper to taste</li>
+            </ul>
+            <strong>How to cook:</strong>
+            <ul>
+                <li>In a large pot, bring the water to a boil</li>
+                <li>Put in the oxtail followed by the onions and simmer for 2.5 to 3 hrs or until tender (35 minutes if using a pressure cooker)</li>
+                <li>Once the meat is tender, add the ground peanuts, peanut butter, and coloring (water from the annatto seed mixture) and simmer for 5 to 7 minutes</li>
+                <li>Add the toasted ground rice and simmer for 5 minutes</li>
+                <li>On a separate pan, saute the garlic then add the banana flower, eggplant, and string beans and cook for 5 minutes</li>
+                <li>Transfer the cooked vegetables to the large pot (where the rest of the ingredients are)</li>
+                <li>Add salt and pepper to taste</li>
+                <li>Serve hot with shrimp paste. Enjoy!
+</li>
+            </ul>
+            <a href="#" class="print-btn" onclick="window.print(); return false;">Print this recipe</a>
+        </div>
+
+        <!-- Recipe 4 -->
+        <div class="recipe-card">
+            <img src="tinola.jpg" alt="Tinola">
+            <h3> Tinola </h3>
+            <div class="recipe-meta">
+                ⭐⭐⭐⭐☆ (4 stars) | Servings: 4 | Prep: 10-15 min | Cook: 60-90 min
+            </div>
+            <p>A Filipino ginger chicken soup with vegetables.</p>
+            <strong>Ingredients:</strong>
+            <ul>
+                <li>3lbs. Chicken</li>
+                <li>2 green papaya, wedged</li>
+                <li>1 ½ cup malunggay leaves</li>
+                <li>1 cup hot pepper leaves</li>
+                <li>5 cloves garlic, crushed and chopped</li>
+                <li>1 onions, chopped</li>
+                <li>3 thumbs ginger, julienned</li>
+                <li>2 Maggi Magic Chicken Cubes</li>
+                <li>1 quart rice wash</li>
+                <li>1 quart water, as needed</li>
+                <li>2 tablespoons fish sauce</li>
+                <li>Ground black pepper to taste (optional)</li>
+                <li>3 tablespoons cooking oil</li>
+            </ul>
+            <strong>How to cook:</strong>
+            <ul>
+                <li>Heat cooking oil in a cooking pot.</li>
+                <li>Saute the garlic, onion, and ginger and let them mingle until the onion gets all soft and sweet</li>
+                <li>Toss the chicken pieces into the pot and cook for 2 minutes, or until they turn light brown. Make sure to give them some little stir to make sure it tans well</li>
+                <li>Pour 2 tablespoons of fish sauce and stir well, then add the rice wash to the pot and let it boil, reduce the heat and let it simmer for 10 minutes. Add water as needed to adjust the stew’s consistency and let it boil again</li>
+                <li>Put the green papaya wedges into the pot and continue to simmer for atleast 15-20 minutes.</li>
+                <li>Add the maggi magic chicken cubes and stir</li>
+                <li>Season it with ground black pepper to taste</li>
+            </ul>
+            <a href="#" class="print-btn" onclick="window.print(); return false;">Print this recipe</a>
+        </div>
+        
+        <!-- Recipe 5 -->
+<div class="recipe-card">
+    <img src="sisig.jpg" alt="Sisig">
+    <h3> Sisig </h3>
+    <div class="recipe-meta">
+        ⭐⭐⭐⭐⭐ (5 stars) | Servings: 2-3 | Prep: 45 min | Cook: 10 min
+    </div>
+    <p>A Filipino dish of chopped pork, onions, and spices.</p>
+    <strong>Ingredients:</strong>
+    <ul>
+        <li>1 lb pig ears</li>
+        <li>1 lb pig snout</li>
+        <li>1 lb pork belly</li>
+        <li>2 pieces onions minced</li>
+        <li>3 pieces bay leaves</li>
+        <li>2 teaspoons salt</li>
+        <li>4 thumbs ginger crushed</li>
+        <li>1 quarts water</li>
+    </ul>
+    <strong>How to cook:</strong>
+    <ul>
+        <li>Put your pig ears, snout, pork belly, bay leaves, 2 teaspoons of salt, and 1 quart of water in a cooking pot, Apply some heat, and boil all of this for 1 hour, Then take it out and drain your water.</li>
+        <li>Now start heating up your grill. Put the meat  you prepared earlier on the grill, and cook them for about 5 minutes. Then turn to the other side, and repeat the previous step.</li>
+        <li>Chop up the pig parts you grilled earlier, Get them in small pieces and place them in a large mixing bowl . Pour in your dressing mixture, then just toss everything togethe	r until they are all well-blended</li>
+        <li>Serve and Enjoy!</li>
+    </ul>
+    <a href="#" class="print-btn" onclick="window.print(); return false;">Print this recipe</a>
+</div>
+
+        <!-- Recipe 6 -->
+<div class="recipe-card">
+    <img src="lechonkawali.jpg" alt="Lechon Kawali">
+    <h3> Lechon Kawali </h3>
+    <div class="recipe-meta">
+        ⭐⭐⭐⭐⭐ (5 stars) | Servings: 2-4 | Prep: 10 min | Cook: 60-70 min
+    </div>
+    <p>A crispy and juicy deep-fried pork belly.
+</p>
+    <strong>Ingredients:</strong>
+    <ul>
+        <li>2 lbs lechon</li>
+        <li>1 piece Knorr pork cube</li>
+        <li>5 pieces dried bay leaves</li>
+        <li>1 tablespoon whole peppercorn</li>
+        <li>¼ cup knorr liquid seasoning</li>
+        <li>8 to 10 cups water</li>
+        <li>4 cups cooking oil</li>
+    </ul>
+    <strong>How to cook:</strong>
+    <ul>
+        <li>Boil water in a cooking pot</li>
+        <li>Add whole peppercorn, bay leaves, and knorr pork cube. Then stir it all up</li>
+        <li>Add the pork belly. Cover the pot and continue to boil in medium heat for 45 minutes. You can add more water if it is needed.</li>
+        <li>Remove the pork belly from the cooking pot and place in a clean plate. Let it cool down for a little bit.</li>
+        <li>Rub knorr liquid seasoning all over the boiled pork belly. Let it stay for atleast 30 minutes</li>
+        <li>Heat oil in a deep cooking pot. Once the oil gets hot enough (around 300F), then gently put the pork belly into the pot.</li>
+        <li>Deep-fry the pork in medium heat for 60-70 minutes.</li>
+    </ul>
+    <a href="#" class="print-btn" onclick="window.print(); return false;">Print this recipe</a>
+</div>
+
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 World on a Plate. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#">Facebook</a> | 
+            <a href="#">Instagram</a> | 
+            <a href="#">Pinterest</a>
+        </div>
+    </footer>
+
+</body>
+</html>
